@@ -1,5 +1,5 @@
 import './App.css'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   const [clicks, setClicks] = useState(0);
@@ -14,12 +14,6 @@ function App() {
       setClicks(clicks-5)
     }
   }
-  const autoClicker = () => {
-    if (clicks > 5) {
-      setMultiple(multiple+1);
-      setClicks(clicks-5)
-    }
-  }
 
   return (
     <>
@@ -27,7 +21,7 @@ function App() {
         <div className='h-[100vh] w-[40vw] '>
           <div className='flex flex-col items-center border-4 bg-blue-300 border-blue-400 rounded-md h-[100vh]'>
             <button className=' h-[50%] w-[50%]' onClick={updateNumber}>
-              <img className='animate-spin' src="../src/assets/—Pngtree—chocolate chip cookie clipart cartoon_12151086.png" alt='cookie'/>
+              <img className='animate-spin' src="../src/assets/cookie.png" alt='cookie'/>
             </button>
             <div className='border-blue-400 border-t-4 h-[50vh] w-[40vw] items-center justify-center flex flex-col'>
               <h1 className='text-9xl text-white absolute'>${clicks}</h1>
