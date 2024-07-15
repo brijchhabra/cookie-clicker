@@ -19,7 +19,7 @@ function App() {
   const auto = () => {
     if (clicks >= 50 * autoM + 50) {
       setAutoM(autoM + 1);
-      setClicks(clicks - 50 * autoM);
+      setClicks(clicks - 50 * autoM - 50);
     }
   };
 
