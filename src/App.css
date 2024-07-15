@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    @apply rounded-md shadow-md shadow-blue-400 h-[25vh] w-[20vw] hover:bg-sky-400 hover:shadow-sky-500 ease-in; 
+}
+
